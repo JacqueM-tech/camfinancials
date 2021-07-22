@@ -160,6 +160,10 @@ header .content-wrapper {
   margin: 0;
 }
 
+/* header img {
+  height: 100px;
+  max-width: 200px;
+} */
 h1 span {
   color: #67be3b;
 }
