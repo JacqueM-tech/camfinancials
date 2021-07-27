@@ -160,10 +160,11 @@ header .content-wrapper {
   margin: 0;
 }
 
-/* header img {
+header img {
   height: 100px;
-  max-width: 200px;
-} */
+  max-width: 300px;
+} 
+
 h1 span {
   color: #67be3b;
 }
@@ -731,8 +732,8 @@ FAQ Page
     }
 
     .hero-image {
-        height: 600px;
-        padding: 20rem 0;
+        height: 500px;
+        padding-top: 200px;
      }
 
     header nav ul {
