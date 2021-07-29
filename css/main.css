@@ -496,6 +496,41 @@ button:hover {
   background-color: white;
 }
 
+/* ===================================================================
+TAX_CORNER PAGE
+================================================================= */
+.tax-corner .content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 20px;
+  background-color: #67be3b;
+}
+
+.tax-corner ul li{
+  list-style-type: disc;
+  margin-left: 5%;
+}
+.irs-link a {
+  color: #67be3b;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
