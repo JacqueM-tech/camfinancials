@@ -516,7 +516,7 @@ h1 {
 }
 
 .tax-corner ul li{
-  list-style-type: disc;
+  /* list-style-type: disc; */
   margin-left: 5%;
 }
 .irs-link a {
