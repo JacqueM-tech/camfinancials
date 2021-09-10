@@ -341,6 +341,7 @@ Services Page
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .services-content {
@@ -382,6 +383,13 @@ Services Page
 
 .special-note P {
   margin: 1rem 0;
+}
+.services h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+  font-size: 3rem;
 }
 
 
