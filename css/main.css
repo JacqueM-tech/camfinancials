@@ -261,12 +261,12 @@ a {
 }
 
 .hero-image {
-  background: url('../img/hero.jpg');
+  background-image: url('../img/hero3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
-  display: flex;
+  max-width: 100%;
+  height: 450px;
 }
 
 #about .content-wrapper {
@@ -276,7 +276,6 @@ a {
   align-items: center;
   max-width: 98%;
 }
-
 .content-wrapper .about-us {
   display: flex;
   flex-flow: column wrap;
@@ -504,32 +503,47 @@ TAX_CORNER PAGE
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
-  margin-left: 5%;
+  max-width: 100%;
 }
+/* .tax-image {
+  background: url('../img/tax-corner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 475px;
+} */
 
-h1 {
+.tax-corner h1 {
   text-align: center;
-  margin-top: 4rem;
-  font-size: 20px;
+  margin-top: -.15rem;
+  font-size: 1.5rem;
   background-color: #67be3b;
+  width: 100%;
 }
-
+.tax-corner h4 {
+  text-align: center;
+}
+.tax-corner p {
+  max-width: 90%;
+  margin-top: -.5rem;
+  font-size: .95rem;
+}
 .tax-corner ul li{
-  /* list-style-type: disc; */
-  margin-left: 5%;
+  list-style-type: disc; 
+  list-style-position: outside;
+  margin-left: 10%; 
+  max-width: 70%;
+ 
 }
 .irs-link a {
-  color: #67be3b;
+  color: #191a19;
   font-weight: 900;
   text-align: center;
   margin-top: 2rem;
+  padding: 1rem;
+  
 }
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -689,10 +703,12 @@ h1 {
      width: 75%;
    }
 
-
-  /* ==========================================================================
+  /* ==========================================================
   Services Page
   ========================================================================== */
+  .services img {
+    height: 775px;
+  }
   .services .content-wrapper {
     display: flex;
     flex-flow: column wrap;
@@ -730,6 +746,16 @@ FAQ Page
 
   textarea {
     width: 60%;
+  }
+  
+  /* ========================================= 
+   TAX_CORNER PAGE
+   ========================================== */
+   .tax-image img {
+    height: 775px;
+  }
+   .tax-corner p {
+    max-width: 80%;
   }
   
 }
@@ -886,6 +912,12 @@ FAQ Page
   .faq-grid {
      width: 50%;
      margin-left: 13rem;
+  }
+  /* ========================================= 
+   TAX_CORNER PAGE
+   ========================================== */
+   .tax-corner p {
+    max-width: 70%;
   }
 
 }
