@@ -261,7 +261,7 @@ a {
 }
 
 .hero-image {
- background-image: url('../img/hero3.jpg');  
+ background-image: url('../img/hero3-1.jpg');  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,7 +269,7 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  height: 450px; */
+  height: 430px;
 }
 
 #about .content-wrapper {
@@ -345,7 +345,10 @@ Services Page
   justify-content: center;
   align-items: center;
 }
-
+.services img {
+  max-width: 100%;
+  height: 500px;
+}
 .services-content {
   display: flex;
   flex-flow: column wrap;
@@ -353,7 +356,6 @@ Services Page
   align-items: center;
   width: 90%;
 }
-
 .services h4 {
   display: flex;
   justify-content: center;
@@ -362,7 +364,6 @@ Services Page
   width: 90%;
   margin-top: 2.5rem;
 }
-
 .services-content {
   display: flex;
   flex-flow: row wrap;
@@ -370,24 +371,19 @@ Services Page
   align-items: center;
   width: 90%;
 }
-
 .services-content h5 {
   color: #67be3b;
   font-weight: 600;
   font-size: .90rem;
   margin: 1rem .25rem 0 0;
 }
-
 .services-content p {
   font-size: .85rem;
   margin: 0;
 }
-
 .special-note P {
   margin: 1rem 0;
 }
-
-
 
 /* ==========================================================================
 FAQ Page
@@ -680,11 +676,12 @@ TAX_CORNER PAGE
      font-size: 1rem;
      color: white;
   }
-
   .hero-image {
-     height: 500px;
-   }
-   
+    height: 500px;
+    width: 100%;
+    padding-top: 10%;
+ }
+
    #about .content-wrapper {
      display: flex;
      flex-flow: row wrap;
@@ -797,8 +794,9 @@ FAQ Page
     }
 
     .hero-image {
-        height: 500px;
-        padding-top: 200px;
+        height: 600px;
+        width: 100%;
+        padding-top: 20%;
      }
 
     header nav ul {
@@ -880,6 +878,9 @@ FAQ Page
     align-items: flex-start;
     width: 60%;
   }
+  .services img {
+    height: 750px;
+  }
 
 
  /* ==========================================================================
@@ -923,7 +924,10 @@ FAQ Page
    .tax-corner p {
     max-width: 70%;
   }
+  .tax-image img {
+    height: 750px;
 
+  }
 }
 
 
