@@ -90,16 +90,13 @@ textarea {
    /* ----STYLESHEET FOR Camfinancials Solutions ----*/
 
 /* General Styles */
-
-html {
-  font-size: 16px;
-}
-body {
+:root {
   background-color: whitesmoke;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   text-align: left;
+  font-size: 16px;
 }
 ul,
 ol {
@@ -140,7 +137,6 @@ footer {
 header .content-wrapper {
   display: flex;
   align-items: center;
-  /* background-color: rgb(163, 162, 162); */
   background-color: #545454;
   justify-content: center;
   flex-flow: row nowrap;
@@ -150,12 +146,14 @@ header img {
   height: 100px;
   max-width: 200px;
 } 
-h2 {
+h1 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.75rem;
+  font-weight: 700;
   margin: 0;
+  font-variant: small-caps;
+  text-shadow: 3px 4px 10px gray;
 }
 header nav {
   font-size: 1.25rem;
@@ -203,9 +201,8 @@ align-items: center;
 margin: 0;
 }
 h1 {
-  font-size: 1rem;
   padding: 1rem;
-  margin: .15rem;
+  margin-top: .15rem;
 }
 header nav ul {
   display: flex;
@@ -242,10 +239,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-.about-us h2 {
-  font-weight: 700;
-  margin-top: 1rem;
-  padding: 1rem .4rem 0;
+.about-us h1 {
+  margin-top: 1.5rem;
+  padding: 1rem;
 }
 .about-us h4 {
   margin: .5rem 0;
@@ -345,11 +341,7 @@ FAQ Page
 }
 
 .faq h1 {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: #67be3b;
-  margin-top: 2.5rem;
-  font-size: 2rem;
+  margin-top: 2.75rem;
 }
 
 .faq h4 {
