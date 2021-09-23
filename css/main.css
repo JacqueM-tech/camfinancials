@@ -91,7 +91,10 @@ textarea {
 
 /* General Styles */
 :root {
-  background-color: whitesmoke;
+  --font-color: #67be3b;
+  
+}
+*{
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -126,7 +129,7 @@ a:hover {
   background-color: #67be3b;
 }
 
-/* --------------- Base Header & Footer Styles --------------- */
+/* --------------- Base Styles --------------- */
 header,
 footer {
  display: flex;
@@ -149,11 +152,14 @@ header img {
 h1 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   font-variant: small-caps;
   text-shadow: 3px 4px 10px gray;
+}
+h3 {
+  font-size: 1.5rem;
 }
 header nav {
   font-size: 1.25rem;
@@ -190,6 +196,7 @@ footer .content-wrapper {
 } 
 .footer-content p {
   line-height: 1.5rem;
+  text-align: center;
 }
 
 /* ------------------- Mobile Styles - Homepage ----------------- */
@@ -312,7 +319,7 @@ a {
   width: 90%;
 }
 .services-content h5 {
-  color: #67be3b;
+  color: var(--font-color);
   font-weight: 600;
   font-size: .90rem;
   margin: 1rem .25rem 0 0;
@@ -325,9 +332,9 @@ a {
   margin: 1rem 0;
 }
 
-/* ==========================================================================
+/* ================================================================
 FAQ Page
-========================================================================== */
+======================================================= */
 
 .faq .content-wrapper {
   display: flex;
@@ -345,8 +352,10 @@ FAQ Page
 }
 
 .faq h4 {
-  color: #67be3b;
+  color: var(--font-color);
   margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
 } 
 
 .faq p {
@@ -445,7 +454,6 @@ TAX_CORNER PAGE
 .tax-corner h1 {
   text-align: center;
   margin-top: -.15rem;
-  font-size: 2rem;
   background-color: #67be3b;
   width: 100%;
 }
@@ -566,13 +574,6 @@ TAX_CORNER PAGE
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */ 
-
-/* General Styles */
-
-  h1,
-  h2 {
-     font-size: 1.15rem;
-  }
 
 /* Header Styles */
   header .content-wrapper {
@@ -700,11 +701,6 @@ FAQ Page
      /* Desktop styles here */
    
      /* General Styles */ 
-
-    h1 {
-     font-size: 1.75rem;
-    }
-
     header .content-wrapper {
      display: flex;
      align-items: center;
@@ -743,29 +739,20 @@ FAQ Page
        max-width: 85%;
        margin-left: 8rem;
      }
-
      .about-us .content-wrapper {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
         align-items: center;
      }
-
-     .about-us h2 {
-        font-size: 1.5rem;
-        padding: 1.75rem 0;
-     }
-
      .about-us h4 {
         font-size: 1.25rem;
      }
-
      .about-us p {
         display: flex;
         font-size: 1.15rem;
         width: 75%;
      }
-
      .content-wrapper .about-items {
         display: flex;
         justify-content: space-between;
