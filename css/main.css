@@ -199,7 +199,7 @@ footer .content-wrapper {
   text-align: center;
 }
 
-/* ------------------- Mobile Styles - Homepage ----------------- */
+/* ------------------- Mobile Styles Homepage ----------------- */
 header .content-wrapper {
 display: flex;
 flex-flow: column wrap;
@@ -250,6 +250,9 @@ a {
   margin-top: 1.5rem;
   padding: 1rem;
 }
+.about-us h3 {
+  font-size: 1.25rem;
+}
 .about-us h4 {
   margin: .5rem 0;
 }
@@ -281,6 +284,9 @@ a {
   margin-bottom: 1rem;
   width: 95%;
 }
+.top {
+  cursor: pointer;
+}
 .footer-content img {
   width: 50%;
 }
@@ -291,10 +297,6 @@ a {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-}
-.services img {
-  max-width: 100%;
-  height: 500px;
 }
 .services-content {
   display: flex;
@@ -332,49 +334,38 @@ a {
   margin: 1rem 0;
 }
 
-/* ================================================================
-FAQ Page
-======================================================= */
-
+/* ======================= FAQ Page ======================= */
 .faq .content-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-
 .faq-content {
   width: 90%;
 }
-
 .faq h1 {
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
-
 .faq h4 {
   color: var(--font-color);
   margin-top: 2.5rem;
   font-size: 1.5rem;
   font-weight: 800;
 } 
-
 .faq p {
   line-height: 1.25rem;
 }
-
 .faq-content ul {
   list-style-type: square;
   list-style-position: outside;
   padding-left: 2rem;
-
 }
-
 .faq-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 1rem;
 }
-
 .grid-items {
   display: flex;
   justify-content: center;
@@ -383,22 +374,17 @@ FAQ Page
   font-size: 1rem;
   text-align: left;
 }
-
 .faq-grid .heading {
   font-weight: 600;
 }
 
-/* ==========================================================================
-Contact Page
-========================================================================== */
-
+/* ========================= Contact Page =================== */
 .contact .content-wrapper h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
 }
-
 .contact .content-wrapper p {
   display: flex;
   justify-content: center;
@@ -406,27 +392,23 @@ Contact Page
   line-height: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .content-wrapper form {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-
 form input {
   width: 60%;
   height: 2.5rem;
   border: 1px solid black;
   margin: 1rem 0;
 }
-
 textarea {
   width: 80%;
   height: 10rem;
   margin: 1rem 0;
 }
-
 button {
   background-color: #67be3b;
   font-weight: 700;
@@ -436,14 +418,11 @@ button {
   border-radius: 12px;
   width: 17%;
 }
-
 button:hover {
   background-color: white;
 }
 
-/* ===================================================================
-TAX_CORNER PAGE
-================================================================= */
+/* ===================== TAX_CORNER PAGE ================== */
 .tax-corner .content-wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -570,12 +549,10 @@ TAX_CORNER PAGE
    Modify as content requires.
    ========================================================================== */
 
-/* --------------------- Tablet Styles - Homepage -------------------- */
+/* --------------------- Tablet Styles -  -------------------- */
 
 @media only screen and (min-width: 768px) {
-  /* Tablet styles here */ 
-
-/* Header Styles */
+  /* Tablet styles Homepage */ 
   header .content-wrapper {
      display: flex;
      align-items: center;
@@ -584,24 +561,20 @@ TAX_CORNER PAGE
      margin: 0;
      width: 100%;
      }
-  
   header {
      background-color: rgb(163, 162, 162);
      display: flex;
      justify-content: center;
      }
-  
    header nav ul {
      display: flex;
      flex-flow: row nowrap;
      justify-content: center;
      align-items: center;
   }
-
   header nav ul li {
      padding: .4rem;
   }
-
   a {
      font-size: 1rem;
      color: white;
@@ -609,8 +582,7 @@ TAX_CORNER PAGE
   .hero-image {
     height: 500px;
     width: 100%;
- }
-
+  }
    #about .content-wrapper {
      display: flex;
      flex-flow: row wrap;
@@ -619,7 +591,6 @@ TAX_CORNER PAGE
      max-width: 90%;
      margin-left: 2rem;
    }
-
    .content-wrapper .about-items {
      display: flex;
      flex-flow: row wrap;
@@ -627,25 +598,18 @@ TAX_CORNER PAGE
      width: 50%;
 
    }
-
    .closing-statement p {
      margin-top: 1rem;
      width: 75%;
    }
 
-  /* ==========================================================
-  Services Page
-  ========================================================================== */
-  .services img {
-    height: 775px;
-  }
+  /* ================== Services Page ====================== */
   .services .content-wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
   }
- 
   .services-content {
     display: flex;
     flex-flow: column wrap;
@@ -653,7 +617,6 @@ TAX_CORNER PAGE
     align-items: flex-start;
     width: 95%;
   }
-
  .services h4 {
     display: flex;
     justify-content: center;
@@ -661,46 +624,27 @@ TAX_CORNER PAGE
     width: 95%;
   }
 
-  /* ==========================================================================
-FAQ Page
-========================================================================== */
+  /* ======================= FAQ Page ====================== */
 
 
-  /* ==========================================================================
-  Contact Page
-  ========================================================================== */
-  
+  /* =================== Contact Page =================== */
   form input {
     width: 40%;
   }
-
   textarea {
     width: 60%;
   }
-  .contact img {
-    max-width: 100%;
-    height: 775px;
-  }
   
-  /* ========================================= 
-   TAX_CORNER PAGE
-   ========================================== */
-   .tax-image img {
-    height: 775px;
-  }
+  /* ===================== TAX_CORNER PAGE ================== */
    .tax-corner p {
     max-width: 80%;
   }
-  
 }
- 
 
-/* --------------------- Desktop Styles - Homepage -------------------- */
+/* ------------------- Desktop Styles ----------------- */
 
   @media only screen and (min-width: 1200px) {
-     /* Desktop styles here */
-   
-     /* General Styles */ 
+     /* Desktop Styles Homepage */ 
     header .content-wrapper {
      display: flex;
      align-items: center;
@@ -708,7 +652,6 @@ FAQ Page
      flex-flow: row nowrap;
      width: 100%;
      }
-  
     header {
      background-color: rgb(163, 162, 162);
      display: flex;
@@ -716,25 +659,20 @@ FAQ Page
      align-items: center;
      flex-flow: row nowrap;
      }
-
     a {
      font-size: 1.15rem;
     }
-
     .hero-image {
         height: 700px;
         width: 100%;
         padding-top: 20%;
      }
-
     header nav ul {
         flex-flow: row nowrap;
      }
-     
     header nav ul li {
         padding: .75rem;
      }
-
      #about .content-wrapper {
        max-width: 85%;
        margin-left: 8rem;
@@ -760,29 +698,21 @@ FAQ Page
         align-items: center;
         width: 25%;
      }
-
-
      .closing-statement p {
        display: flex;
        justify-content: center;
        padding-top: 1.5rem;
         width: 75%;
       }
-
       .footer-content img {
         width: 20%;
       }
-
       .footer-content h6 {
      font-size: 1rem;
 
     }
 
-
-/* ==========================================================================
-  Services Page
-  ========================================================================== */
-  
+/* ======================== Services Page ====================== */
   .services-content {
     display: flex;
     flex-flow: column wrap;
@@ -790,7 +720,6 @@ FAQ Page
     align-items: flex-start;
     width: 60%;
   }
-
  .services h4 {
     display: flex;
     justify-content: center;
@@ -801,45 +730,33 @@ FAQ Page
     height: 750px;
   }
 
-
- /* ==========================================================================
-  Contact Page
-  ========================================================================== */
-  
+ /* ====================== Contact Page ====================== */
   form input {
     width: 15%;
   }
-
   textarea {
     width: 25%;
     height: 15rem;
   }
-  
   button {
     width: 6%;
   }
   
-  /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-   
+  /* ====================== FAQ Page ====================== */
   .faq .content-wrapper {
      display: flex;
      flex-flow: column wrap;
      justify-content: center;
   } 
-
   .faq-content {
      width: 75%;
   }
-
   .faq-grid {
      width: 50%;
-     margin-left: 13rem;
+     margin-left: 22rem;
   }
-  /* ========================================= 
-   TAX_CORNER PAGE
-   ========================================== */
+
+  /* ==================== TAX_CORNER PAGE =================== */
    .tax-corner p {
     max-width: 70%;
   }
