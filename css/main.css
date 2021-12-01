@@ -91,13 +91,12 @@ textarea {
 
 /* General Styles */
 :root {
-  --font-color: #67be3b;
+  --primary-color: #67be3b;
   
 }
 *{
   color: black;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
   text-align: left;
   font-size: 16px;
 }
@@ -120,13 +119,6 @@ img {
 .content-wrapper {
  width: 100%;
  margin: 0;
-}
-.top a {
-color: black;
-background-image: linear-gradient(green, white) ;
-}
-a:hover {
-  background-color: #67be3b;
 }
 
 /* --------------- Base Styles --------------- */
@@ -211,16 +203,34 @@ h1 {
   padding: 1rem;
   margin-top: .15rem;
 }
-header nav ul {
+.nav-ul {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   margin-bottom: .5rem;
 }
-a {
-  font-size: 1rem;
+.na-ul i a {
+  display: inline-block;
+}
+.hamburger {
+  background: transparent;
+  border: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hamburger i {
+  color: var(--primary-color);
+}
+.hamburger:focus {
+  outline: none;
+}
+.nav-ul {
+  display: none;
+}
+.nav-ul.show {
   display: flex;
-  justify-content: center;
-  align-content: center;
 }
 .hero-image {
  background-image: url('../img/hero-1.jpg');  
@@ -285,7 +295,17 @@ a {
   width: 95%;
 }
 .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top button {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
   cursor: pointer;
+  background: linear-gradient( white, green);
+  width: 35%;
 }
 .footer-content img {
   width: 50%;
@@ -321,7 +341,7 @@ a {
   width: 90%;
 }
 .services-content h5 {
-  color: var(--font-color);
+  color: var(--primary-color);
   font-weight: 600;
   font-size: .90rem;
   margin: 1rem .25rem 0 0;
@@ -348,7 +368,7 @@ a {
   margin-top: 2rem;
 }
 .faq h4 {
-  color: var(--font-color);
+  color: var(--primary-color);
   margin-top: 2.5rem;
   font-size: 1.5rem;
   font-weight: 800;
@@ -410,7 +430,7 @@ textarea {
   margin: 1rem 0;
 }
 button {
-  background-color: #67be3b;
+  background-color: var(--primary-color);
   font-weight: 700;
   margin: .75rem 0;
   padding: .5rem;
@@ -433,7 +453,7 @@ button:hover {
 .tax-corner h1 {
   text-align: center;
   margin-top: -.15rem;
-  background-color: #67be3b;
+  background-color: var(--primary-color);
   width: 100%;
 }
 .tax-corner h4 {
@@ -579,6 +599,15 @@ button:hover {
      font-size: 1rem;
      color: white;
   }
+  .nav-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger {
+    display: none;
+  }
   .hero-image {
     height: 500px;
     width: 100%;
@@ -659,7 +688,7 @@ button:hover {
      align-items: center;
      flex-flow: row nowrap;
      }
-    a {
+    .nav-ul i a {
      font-size: 1.15rem;
     }
     .hero-image {
@@ -667,11 +696,14 @@ button:hover {
         width: 100%;
         padding-top: 20%;
      }
-    header nav ul {
+    .nav-ul {
         flex-flow: row nowrap;
      }
-    header nav ul li {
+    .nav-ul li {
         padding: .75rem;
+     }
+     .hamburger {
+       display: none;
      }
      #about .content-wrapper {
        max-width: 85%;
