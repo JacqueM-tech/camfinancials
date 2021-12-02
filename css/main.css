@@ -646,7 +646,16 @@ button:hover {
     align-items: flex-start;
     width: 95%;
   }
- .services h4 {
+  .services-hamburger {
+    display: none;
+  }
+  .services-nav-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .services h4 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -702,10 +711,7 @@ button:hover {
     .nav-ul li {
         padding: .75rem;
      }
-     .hamburger {
-       display: none;
-     }
-     #about .content-wrapper {
+    #about .content-wrapper {
        max-width: 85%;
        margin-left: 8rem;
      }
