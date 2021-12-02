@@ -92,7 +92,7 @@ textarea {
 /* General Styles */
 :root {
   --primary-color: #67be3b;
-  
+  --bg-color: #545454;
 }
 *{
   color: black;
@@ -132,7 +132,7 @@ footer {
 header .content-wrapper {
   display: flex;
   align-items: center;
-  background-color: #545454;
+  background-color: var(--bg-color);
   justify-content: center;
   flex-flow: row nowrap;
   margin: 0;
@@ -216,12 +216,14 @@ h1 {
 .hamburger {
   background: transparent;
   border: 0;
-  color: var(--primary-color);
-  font-size: 1.5rem;
+  border-color: transparent;
+  /* color: var(--primary-color); */
   cursor: pointer;
 }
 .hamburger i {
   color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 .hamburger:focus {
   outline: none;
@@ -470,15 +472,19 @@ button:hover {
   margin-left: 10%; 
   max-width: 70%;
 }
+.irs-link {
+  display: flex;
+  justify-content: center;
+}
 .irs-link a {
   color: #191a19;
   font-weight: 900;
-  margin: 2rem 0;
+  text-align: center;
   padding: 1rem;
   border: 2px solid black;
   max-width: 40%;
-  margin-left: 30%;
   font-size: 1.25rem;
+  background-image: linear-gradient(white, rgb(4, 175, 4));
 }
 
 /* ==========================================================================
