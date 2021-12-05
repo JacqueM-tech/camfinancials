@@ -102,16 +102,16 @@ textarea {
 }
 ul,
 ol {
- list-style-type: none;
- margin: 0;
- padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 }
 p {
- line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 img {
  width: 100%;
@@ -154,21 +154,18 @@ h3 {
   font-size: 1.5rem;
 }
 header nav {
-  font-size: 1.25rem;
-  font-weight: 600;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 }
 header nav ul {
-  font-weight: 600;
-  display: flex;
-  justify-content: space-around;
+  /* font-weight: 700; */
   width: 100%;
-}
+  }
 header nav ul li {
-  font-size: 1.125rem;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 footer .content-wrapper {
   display: flex;
@@ -216,8 +213,6 @@ h1 {
 .hamburger {
   background: transparent;
   border: 0;
-  border-color: transparent;
-  /* color: var(--primary-color); */
   cursor: pointer;
 }
 .hamburger i {
