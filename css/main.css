@@ -160,7 +160,6 @@ header nav {
   flex-flow: row wrap;
 }
 header nav ul {
-  /* font-weight: 700; */
   width: 100%;
   }
 header nav ul li {
@@ -186,6 +185,9 @@ footer .content-wrapper {
 .footer-content p {
   line-height: 1.5rem;
   text-align: center;
+}
+footer img {
+  height: 120px;
 }
 
 /* ------------------- Mobile Styles Homepage ----------------- */
@@ -322,13 +324,14 @@ h1 {
   align-items: center;
   width: 90%;
 }
-.services h4 {
+.services h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   width: 90%;
   margin-top: 2.5rem;
+  text-align: center;
 }
 .services-content {
   display: flex;
@@ -337,11 +340,11 @@ h1 {
   align-items: center;
   width: 90%;
 }
-.services-content h5 {
+.services-content h4 {
   color: var(--primary-color);
   font-weight: 600;
   font-size: .90rem;
-  margin: 1rem .25rem 0 0;
+  /* margin: 1rem .25rem 0 0; */
 }
 .services-content p {
   font-size: .85rem;
@@ -401,13 +404,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-}
-.contact .content-wrapper p {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
 }
 .content-wrapper form {
   display: flex;
@@ -433,10 +430,13 @@ button {
   padding: .5rem;
   border: 2px solid grey;
   border-radius: 12px;
-  width: 17%;
+  width: 25%;
 }
 button:hover {
   background-color: white;
+}
+footer img {
+  height: 80px;
 }
 
 /* ===================== TAX_CORNER PAGE ================== */
@@ -656,12 +656,12 @@ button:hover {
     justify-content: center;
     align-items: center;
   }
-  .services h4 {
+  /* .services h4 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 95%;
-  }
+  } */
 
   /* ======================= FAQ Page ====================== */
 
@@ -702,9 +702,9 @@ button:hover {
      font-size: 1.15rem;
     }
     .hero-image {
-        height: 700px;
+        height: 100vh;
         width: 100%;
-        padding-top: 20%;
+        padding-top: 10%;
      }
     .nav-ul {
         flex-flow: row nowrap;
@@ -744,7 +744,7 @@ button:hover {
         width: 75%;
       }
       .footer-content img {
-        width: 20%;
+        width: 16%;
       }
       .footer-content h6 {
      font-size: 1rem;
@@ -759,18 +759,15 @@ button:hover {
     align-items: flex-start;
     width: 60%;
   }
- .services h4 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 60%;
-  }
   .services img {
-    height: 750px;
+    height: 75vh;
   }
 
  /* ====================== Contact Page ====================== */
-  form input {
+ .contact img {
+  height: 75vh;
+ } 
+ form input {
     width: 15%;
   }
   textarea {
@@ -787,6 +784,12 @@ button:hover {
      flex-flow: column wrap;
      justify-content: center;
   } 
+  .faq img {
+    height: 75vh;
+  }
+  .faq h3 {
+    padding-top: 30px;
+  }
   .faq-content {
      width: 75%;
   }
@@ -800,9 +803,12 @@ button:hover {
     max-width: 70%;
   }
   .tax-image img {
-    height: 750px;
-
+    height: 75vh;
   }
+  .tax-corner h3 {
+    padding: 20px;
+  }
+
 }
 
 
